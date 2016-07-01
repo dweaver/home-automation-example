@@ -32,7 +32,6 @@ export function handleResponse(response) {
     }
     return response.text().then(body => {
       response.payload = body;
-      console.log('payload is ', body);
       return response;
     });
   }
